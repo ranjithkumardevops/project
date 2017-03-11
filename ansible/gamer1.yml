@@ -14,7 +14,7 @@
     yum: name=tomcat state=present
 
   - name: Download latest gameoflife.war file
-    get_url: url=http://52.33.148.198:9091/nexus/content/repositories/gameoflife/Dev/{{time}}/{{build}}/{{gol_version}} dest=/tmp/ mode=755
+    get_url: url=http://52.33.148.198:9091/nexus/content/repositories/gameoflife/QA/{{time}}/{{build}}/{{gol_version}} dest=/tmp/ mode=755
 
   - name: stop tomcat service
     service: name=tomcat state=stopped
