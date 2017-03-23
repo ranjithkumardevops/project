@@ -4,8 +4,7 @@
 
 
   tasks:
-  
-  - name: Install EPEL-release
+   - name: Install EPEL-release
     yum: name=epel-release state=present
 
   - name: Install java_1.7
